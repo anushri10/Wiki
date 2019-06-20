@@ -1,4 +1,5 @@
 import pickle, random, sys
+import utils
 import numpy as np
 import pandas as pd
 
@@ -18,7 +19,8 @@ trainColumns = ['A','B','label']
 trainData = pd.DataFrame(columns=trainColumns)
 tuples=10000
 papers=[[]]
-lines = open('dummy.txt', 'r', encoding='utf-8').readlines()
+#lines = open('dummy.txt', 'r', encoding='utf-8').readlines()
+lines = utils.ToList('dummy.txt')
 papers[0]=lines
 #print(lines,'\n')
 #print("Length is: ", len(papers),'\n')    
