@@ -3,7 +3,6 @@ def ToList(filename):
     Takes filename as argument and returns list of lines in that file.
     '''
     lines = open(filename, 'r', encoding='utf-8').readlines()
-    #lines = open('dummy.txt', 'r', encoding='utf-8').readlines()
     return lines
 
 
